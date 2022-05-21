@@ -19,7 +19,7 @@ void Widget::on_btnCal_clicked()
     QString str=ui->editNum->text();	// 读取“数量”字符
     int num=str.toInt();	// 转换为Int
     str=ui->editPrice->text();
-    float price=str.toInt();
+    float price=str.toFloat();
     float total=num*price;
     str=str.asprintf("%.2f",total);	// 转换成字符串
     ui->editTotal->setText(str);	// 填充到LineEdit-total
